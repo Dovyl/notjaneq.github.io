@@ -182,15 +182,15 @@ local function SNUMK_fake_script()
 	local tip = script.Parent
 	while true do
 		wait(5)
-		tip.Text = "Arkhalis Tf Is That LMAO"
+		tip.Text = "Getting Assets..."
 		wait(5)
-		tip.Text = "Did U Know That K4F Is Gay?"
+		tip.Text = "Do you know PS1?"
 		wait(5)
 		tip.Text = "Bypassing..."
 		wait(5)
-		tip.Text = "I Love Cats"
+		tip.Text = "Playing monopoly"
 		wait(5)
-		tip.Text = "Rip..."
+		tip.Text = "Loading..."
 	end
 end
 coroutine.wrap(SNUMK_fake_script)()
