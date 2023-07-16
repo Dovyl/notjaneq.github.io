@@ -1,0 +1,212 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>china approved generator 🤠👍</title>
+    <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 28px;
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+.emoji-smile {
+  background-image: url('images/emojithumbsup.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+}
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="checkbox"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button[type="submit"] {
+            display: block;
+            margin-top: 20px;
+            padding: 10px 16px;
+            border: none;
+            background-color: #FF0000;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .output-container {
+            margin-top: 20px;
+            position: relative;
+        }
+
+        #output {
+            width: 100%;
+            height: 100px;
+            resize: none;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            font-family: monospace;
+        }
+
+        .recaptcha-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .copy-button {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            padding: 5px 10px;
+            border: none;
+            background-color: #FF0000;
+            color: #fff;
+            font-size: 14px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .copy-button:hover {
+            background-color: #45a049;
+        }
+
+        p.error-message {
+            color: #ff0000;
+            margin: 0;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        p.success-message {
+            color: #FF0000;
+            margin: 0;
+            font-size: 14px;
+            text-align: center;
+        }
+        label[for="output"] {
+  text-align: center;
+}
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    appearance: none;
+    background-color: #fff;
+    background-image: linear-gradient(45deg, transparent 50%, #666 50%),
+                      linear-gradient(135deg, #666 50%, transparent 50%),
+                      linear-gradient(to right, #ccc, #ccc);
+    background-position: calc(100% - 20px) calc(1em + 2px),
+                         calc(100% - 15px) calc(1em + 2px),
+                         100% 0;
+    background-size: 5px 5px, 5px 5px, 2.5em 3.5em;
+    background-repeat: no-repeat;
+}
+
+select:hover {
+    border-color: #999;
+}
+
+select:focus {
+    outline: none;
+    border-color: #FF0000;
+}
+
+/* Styling the arrow icon */
+select option::before {
+    content: "▶";
+    margin-right: 5px;
+}
+
+    </style>
+    <script src="js/api.js" async defer></script>
+    <script>
+        function copyOutput() {
+            var output = document.getElementById("output");
+            output.select();
+            document.execCommand("copy");
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>script generator <span class="emoji-smile"></span></h1>
+        
+        <form method="post">
+            <label for="mouselock">mouselock</label>
+            <input type="checkbox" name="mouselock" id="mouselock">
+            <br>
+            <label for="webhook">webhook</label>
+            <input type="text" name="webhook" id="webhook" required>
+            <br>
+            <label for="username">username</label>
+            <input type="text" name="username" id="username" required>
+            <br>
+                        <label for="uploader">script uploader</label>
+            <select name="uploader" id="uploader">
+                <option value="paste.ee">paste.ee</option>
+                <option value="github.com">github</option>
+            </select>
+            <div class="recaptcha-container">
+                <div class="g-recaptcha" data-sitekey="6LeY4W8mAAAAADXGE3LY9w4_zMXeXNoL1USF-YJy"></div>
+            </div>
+            <br>
+            <button type="submit">upload</button>
+        </form>
+    </div>
+
+</body></html>
