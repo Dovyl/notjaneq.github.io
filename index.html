@@ -1,131 +1,122 @@
+
 <!DOCTYPE html>
 <html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <head>
-  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <title>Dovyl</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#992DFF">
-  <meta property="og:description" content="Dovyl the W">
-  <meta property="og:title" content="Dovyl">
-  <link rel="stylesheet" href="static/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace&amp;display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab&amp;display=swap">
-  <link rel="stylesheet" href="static/fonts/fontawesome-all.min.css">
-  <link rel="stylesheet" href="static/css/styles.css">
-  <link rel="stylesheet" href="static/css/Navigation-Clean.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com/">
-  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital@1&display=swap" rel="stylesheet">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+<title>Dovyl</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#992DFF">
+<meta property="og:description" content="Dovyl the W">
+<meta property="og:title" content="Dovyl">
+<link rel="stylesheet" href="static/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab&amp;display=swap">
+<link rel="stylesheet" href="static/fonts/fontawesome-all.min.css">
+<link rel="stylesheet" href="static/css/styles.css">
+<link rel="stylesheet" href="static/css/Navigation-Clean.css">
+<link rel="preconnect" href="https://fonts.googleapis.com/%22%3E
+    <link rel=" preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital@1&display=swap" rel="stylesheet">
 </head>
 <body class="bmain">
-  <audio loop src="assets/disaster.mp3" id="audio"></audio>
+<audio loop src="assets/disaster.mp3" id="audio"></audio>
 
-  <script>
-    var has_init = false;
-    var audio = document.getElementById("audio");
-    audio.volume = 0.075;
+        <script>
+            var has_init = false
+            var audio = document.getElementById("audio"); audio.volume = 0.075;
 
-    function audio_init() {
-      if (has_init) return;
-      audio.play().then(() => {
-        var rythm = new Rythm();
-        rythm.addRythm('img', 'image-shadow', 0, 10);
-        rythm.addRythm('title', 'text-shadow', 0, 10);
-        rythm.addRythm('text', 'text-shadow', 0, 10);
-        rythm.connectExternalAudioElement(audio);
-        rythm.start();
-        document.getElementsByClassName('container_main')[0].style.visibility = 'visible';
-        document.getElementsByClassName('container_init')[0].style.visibility = 'hidden';
-        has_init = true;
-        console.log('initialized');
-      });
-    }
+            function audio_init() {
+                if (has_init) return
+                audio.play().then(() => {
+                    var rythm = new Rythm()
+                    rythm.addRythm('img', 'image-shadow', 0, 10)
+                    rythm.addRythm('title', 'text-shadow', 0, 10)
+                    rythm.addRythm('text', 'text-shadow', 0, 10)
+                    rythm.connectExternalAudioElement(audio)
+                    rythm.start()
+                    document.getElementsByClassName('container_main')[0].style.visibility = 'visible'
+                    document.getElementsByClassName('container_init')[0].style.visibility = 'hidden'
+                    has_init = true
+                    console.log('initalized')
+                })
+            }
 
-    audio_init();
-    window.onclick = () => {
-      audio_init();
-    };
+            audio_init()
+            window.onclick = () => {
+                audio_init()
+            }
 
-    document.addEventListener('contextmenu', event => event.preventDefault());
-  </script>
+            document.addEventListener('contextmenu', event => event.preventDefault())
 
-  <script>
-    var _app = function () {
-      this.id = 0;
-      this.videoElement = null;
-      this.musicVolume = 0.15;
-      this.musicFadeIn = 4000;
-      this.Texts = [
-        "Pro Scripter",
-        "EZ Hub Owner",
-        "24/7 Scripter",
-        "https://discord.gg/ma9VSyQUeE",
-        "https://discord.gg/ma9VSyQUeE"                         
-      ];
-    };
-    
-    var app = new _app();
-  </script>
+        </script>                 
 
-  <div class="startthing">
-    <i><a class="next" style="font-size: 5em; color: rgb(255, 255, 255); font-family: 'Kanit', sans-serif;">>Click Me!<</a></i>
-  </div>
+<script>
+         var _app = function () {
+          this.id = 0;
+          this.videoElement = null;
+          this.musicVolume = 0.15;
+          this.musicFadeIn = 4000;
+          this.Texts = [
+              "Pro Scripter",
+              "EZ Hub Owner",
+              "24/7 Scripter",
+              "https://discord.gg/ma9VSyQUeE",
+              "https://discord.gg/ma9VSyQUeE"                         
+          ];
+      };
+      
+      var app = new _app();
+    </script>
+<div class="startthing">
+<i><a class="next" style="font-size: 5em; color: rgb(255, 255, 255); font-family: 'Kanit', sans-serif;">>Click Me!<</a></i>
+</div>
+<div class="background">
+<div id="pattern"></div>
+<video id="background" loop="">
+<source src="https://media.discordapp.net/attachments/1129345834945892412/1129865831795400766/dark_red_black_background_design_hd_red_and_black_aesthetic.jpg" type="image/jpg">
+<script>
+          var video = document.getElementById("background");
+          
+          app.videoElement = video;
+          app.videoElement.volume = 0;
+        </script>
+</video>
+</div>
+<div>
+<nav class="navbar navbar-light navbar-expand-lg navigation-clean">
+<div class="container">
+<div class="collapse navbar-collapse" id="navcol-1">
+<ul class="navbar-nav mx-auto">
+</ul>
+</div>
+</div>
+</nav>
+<section class="main">
+<div class="text-start containers">
+<div class="Brand">
 
-  <div class="background">
-    <div id="pattern"></div>
-    <video id="background" loop="">
-      <source src="https://media.discordapp.net/attachments/1129345834945892412/1129865831795400766/dark_red_black_background_design_hd_red_and_black_aesthetic.jpg" type="image/jpg">
-      <script>
-        var video = document.getElementById("background");
-        app.videoElement = video;
-        app.videoElement.volume = 0;
-      </script>
-    </video>
-  </div>
-
-  <div>
-    <nav class="navbar navbar-light navbar-expand-lg navigation-clean">
-      <div class="container">
-        <div class="collapse navbar-collapse" id="navcol-1">
-          <ul class="navbar-nav mx-auto">
-           <button class="Mailstealer" onclick="window.location.href='https://dovyl.space/Mailstealer.lua'">Scripts>
-            <li class="nav-item">
-              <a class="https://dovyl.space/Mailstealer.lua" href="#">Button</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <section class="main">
-      <div class="text-start containers">
-        <div class="Brand">
-          <h1 class="Paragraph Hello" id="testamonguspoop"></h1>
-          <p class="a"><span id="Bruh" class="Paragraph"></span></p>
-        </div>
-        <iframe height="250px" width="410px" scrolling="no" src="https://lanyard.cnrad.dev/api/1071067641063686265?borderRadius=5px&amp;bg=a&amp;animated=true" frameborder="0"></iframe>
-      </div>
-    </section>
-  </div>
-
-  <script src="static/js/bootstrap.min.js"></script>
-  <script src="static/js/jquery.js"></script>
-  <script src="static/js/jquery_cookie.js"></script>
-  <script src="static/js/typed.js"></script>
-  <script src="static/js/ok.js"></script>
-
-  <script>
-    var xmlHttp = new XMLHttpRequest();
-    xmlHttp.open("GET", 'https://api64.ipify.org/', false);
-    try {
-      xmlHttp.send(null);
-      var real_ip = xmlHttp.responseText;
-    } catch(err) {
-      var real_ip = "Adblocker Detected. Please turn it off.";
-    }
-    document.getElementById("testamonguspoop").innerHTML = real_ip;
-  </script>
+<h1 class="Paragraph Hello" id="testamonguspoop"></h1>
+<p class="a"><span id="Bruh" class="Paragraph"></span></p>
+</div>
+<iframe height="250px" width="410px" scrolling="no" src="https://lanyard.cnrad.dev/api/1071067641063686265?borderRadius=5px&amp;bg=a&amp;animated=true" frameborder="0">
+          </iframe>
+</div>
+</section>
+</div>
+<script src="static/js/bootstrap.min.js"></script><script src="static/js/jquery.js"></script><script src="static/js/jquery_cookie.js"></script><script src="static/js/typed.js"></script><script src="static/js/ok.js"></script>
+<script>
+      var xmlHttp = new XMLHttpRequest();
+      xmlHttp.open("GET", 'https://api64.ipify.org/', false);
+      try {
+        xmlHttp.send(null);
+        var real_ip = xmlHttp.responseText;
+      } catch(err) {
+        var real_ip = "Adblocker Detected. Please turn it off."
+      }
+      document.getElementById("testamonguspoop").innerHTML = real_ip;
+  const fs = require('fs');
+    </script>
 </body>
 </html>
